@@ -1,2 +1,12 @@
-<h1>Welcome to SvelteKit</h1>
-<p>Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation</p>
+<script>
+	import Header from '../lib/home/Header.svelte';
+	import MissionHero from '../lib/home/MissionHero.svelte';
+</script>
+
+<Header />
+<main>
+	<MissionHero />
+</main>
+
+<style>
+</style>
