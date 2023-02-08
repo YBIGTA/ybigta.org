@@ -7,6 +7,9 @@
 	<nav>
 		<ul class="ybigta-menu">
 			<li>
+				<a href="/about">About</a>
+			</li>
+			<li>
 				<a href="/archive">Archive</a>
 			</li>
 			<li>

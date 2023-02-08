@@ -6,11 +6,13 @@
 <style>
 	section {
 		width: 100%;
+		min-height: calc(100vh - 5rem);
 		background-color: #316db2;
-		padding: 8rem 3rem;
+		padding: 0rem 3rem;
 
 		display: flex;
 		flex-direction: column;
+		justify-content: center;
 		align-items: center;
 		gap: 1.5rem;
 
