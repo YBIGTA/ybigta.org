@@ -1,6 +1,10 @@
+<script>
+</script>
+
 <section>
 	<span class="first">Shape the Future of Data</span>
 	<span class="second">with a Community of Enthusiasts</span>
+	<canvas id="mission_canvas" />
 </section>
 
 <style>
