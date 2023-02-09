@@ -1,6 +1,6 @@
 <script>
-	import CurriculumSection from '$lib/about/CurriculumSection.svelte';
-	import IntroSection from '$lib/about/IntroSection.svelte';
+	import CurriculumSection from './components/CurriculumSection.svelte';
+	import IntroSection from './components/IntroSection.svelte';
 </script>
 
 <svelte:head>
