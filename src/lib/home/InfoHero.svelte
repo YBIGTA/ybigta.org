@@ -1,7 +1,9 @@
 <section>
 	<div class="container">
 		<div class="item">Archive</div>
-		<div class="item">History</div>
+		<div class="item">
+			<a href="/about">About Us</a>
+		</div>
 		<div class="item">Curriculum</div>
 		<div class="item">Wiki</div>
 	</div>

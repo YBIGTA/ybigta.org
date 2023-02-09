@@ -6,7 +6,7 @@
 	<div class="logo-container">
 		<span class="logo">ybigta</span>
 		<span class="copyright">
-			&copy; 2016 연세대학교 빅데이터학회 Ybigta. All rights reserved.
+			&copy; 2023 연세대학교 빅데이터학회 Ybigta. All rights reserved.
 		</span>
 	</div>
 	<ul class="contacts">
@@ -34,13 +34,15 @@
 <style>
 	footer {
 		width: 100%;
+		height: 12rem;
 		background-color: black;
 		color: white;
 
-		padding: 4rem 3rem;
+		padding: 0rem 3rem;
 
 		display: flex;
 		justify-content: space-between;
+		align-items: center;
 	}
 
 	.logo-container {

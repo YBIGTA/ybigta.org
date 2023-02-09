@@ -48,5 +48,6 @@
 		overflow: hidden;
 		color: #888;
 		word-break: keep-all;
+		line-height: 1.2;
 	}
 </style>
