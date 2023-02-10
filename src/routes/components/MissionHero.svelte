@@ -31,7 +31,7 @@
 
 		let loadedModel: GLTF;
 		const loader = new GLTFLoader();
-		loader.load('/assets/models/shiba/scene.gltf', (gltf) => {
+		loader.load('/models/shiba/scene.gltf', (gltf) => {
 			loadedModel = gltf;
 			scene.add(loadedModel.scene);
 			loadedModel.scene.scale.set(10, 10, 10);

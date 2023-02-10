@@ -1,5 +1,5 @@
 <script>
-	import ContactIcon from './ContactIcon.svelte';
+	import ContactIcon from './components/ContactIcon.svelte';
 </script>
 
 <footer>
@@ -23,7 +23,7 @@
 			<i slot="icon" class="bi bi-github" />
 		</ContactIcon>
 		<ContactIcon href="http://pf.kakao.com/_KxcxkBK">
-			<img slot="icon" class="kakao-icon" src="/img/kakaotalk.svg" alt="kakaotalk icon" />
+			<img slot="icon" class="kakao-icon" src="/icons/kakaotalk.svg" alt="kakaotalk icon" />
 		</ContactIcon>
 		<ContactIcon href="mailto:yonseibigdata@gmail.com">
 			<i slot="icon" class="bi bi-envelope-fill" />
@@ -31,7 +31,7 @@
 	</ul>
 </footer>
 
-<style>
+<style lang="scss">
 	footer {
 		width: 100%;
 		height: 12rem;
@@ -50,13 +50,15 @@
 		flex-direction: column;
 		align-items: flex-start;
 		gap: 0.75rem;
-	}
-	.logo-container > .logo {
-		font-family: 'FacebookLetterFaces', sans-serif;
-		font-size: 2rem;
-	}
-	.logo-container > .copyright {
-		font-size: 0.8rem;
+
+		.logo {
+			font-family: 'FacebookLetterFaces', sans-serif;
+			font-size: 2rem;
+		}
+
+		.copyright {
+			font-size: 0.8rem;
+		}
 	}
 
 	ul {

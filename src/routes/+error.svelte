@@ -1,12 +1,13 @@
 <script>
 	import { page } from '$app/stores';
+	import Seo from '$lib/layout/Seo.svelte';
 
 	const pageTitleObj = {
-		404: 'Page Not Found | Ybigta',
-		500: 'Internal Server Error | Ybigta'
+		404: 'Page Not Found',
+		500: 'Internal Server Error'
 	};
 
-	let title = 'Error Page | Ybigta';
+	let title = 'Error Page';
 	if ($page.status === 404) {
 		title = pageTitleObj[404];
 	} else if ($page.status === 500) {
@@ -14,9 +15,7 @@
 	}
 </script>
 
-<svelte:head>
-	<title>{title}</title>
-</svelte:head>
+<Seo {title} />
 <div class="container">
 	{#if $page.status === 404}
 		<h2>404</h2>
