@@ -1,7 +1,8 @@
-<svelte:head>
-	<title>Curriculum | YBIGTA</title>
-</svelte:head>
+<script>
+	import Seo from '$lib/layout/Seo.svelte';
+</script>
 
+<Seo title="Curriculum" />
 <section>
 	<h2>Curriculum</h2>
 	<p>데이터에 대한 다양한 경험과 전문성을 갖추고, 이를 활용하여 실제 프로젝트를 진행합니다.</p>
