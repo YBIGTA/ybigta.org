@@ -1,7 +1,25 @@
 <section class="page-title">
-	<h2>Recruiting</h2>
-	<h4>데이터에 대한 관심을 가지고 열정있게 공부할 사람을 찾습니다.</h4>
+	<h2>
+		<slot />
+	</h2>
+	{#if $$slots.image}
+		<slot name="image" />
+	{/if}
 </section>
 
-<style>
+<style lang="scss">
+	section {
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-start;
+		padding-top: 4rem;
+	}
+	h2 {
+		font-size: 4rem;
+		font-weight: 700;
+		line-height: 1.5;
+		margin: 0 3rem;
+		margin-bottom: 1rem;
+	}
 </style>

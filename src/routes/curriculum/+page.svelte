@@ -18,7 +18,7 @@
 		width: 100%;
 		padding: 4rem 3rem;
 
-		background-color: rgb(103, 184, 255);
+		background-color: rgb(0, 96, 180);
 		color: #fff;
 	}
 
