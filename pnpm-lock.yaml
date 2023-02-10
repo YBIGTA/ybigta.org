@@ -2,6 +2,7 @@ lockfileVersion: 5.4
 
 specifiers:
   '@playwright/test': ^1.28.1
+  '@popperjs/core': ^2.11.6
   '@sveltejs/adapter-auto': ^2.0.0
   '@sveltejs/adapter-cloudflare': ^2.0.1
   '@sveltejs/kit': ^1.5.0
@@ -24,6 +25,7 @@ specifiers:
   vitest: ^0.25.3
 
 dependencies:
+  '@popperjs/core': 2.11.6
   marked: 4.2.12
   three: 0.149.0
 
@@ -338,6 +340,10 @@ packages:
   /@polka/url/1.0.0-next.21:
     resolution: {integrity: sha512-a5Sab1C4/icpTZVzZc5Ghpz88yQtGOyNqYXcZgOssB2uuAr+wF/MvN6bgtW32q7HHrvBki+BsZ0OuNv6EV3K9g==}
     dev: true
+
+  /@popperjs/core/2.11.6:
+    resolution: {integrity: sha512-50/17A98tWUfQ176raKiOGXuYpLyyVMkxxG6oylzL3BPOlA6ADGdK7EYunSa4I064xerltq9TGXs8HmOk5E+vw==}
+    dev: false
 
   /@sveltejs/adapter-auto/2.0.0_@sveltejs+kit@1.5.0:
     resolution: {integrity: sha512-b+gkHFZgD771kgV3aO4avHFd7y1zhmMYy9i6xOK7m/rwmwaRO8gnF5zBc0Rgca80B2PMU1bKNxyBTHA14OzUAQ==}

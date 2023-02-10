@@ -1,8 +1,8 @@
 <script>
-	import InfoHero from './components/home/InfoHero.svelte';
-	import MissionHero from './components/home/MissionHero.svelte';
-	import RecruitingHero from './components/home/RecruitingHero.svelte';
-	import TeamHero from './components/home/TeamHero.svelte';
+	import InfoHero from './components/InfoHero.svelte';
+	import MissionHero from './components/MissionHero.svelte';
+	import RecruitingHero from './components/RecruitingHero.svelte';
+	import TeamHero from './components/TeamHero.svelte';
 </script>
 
 <svelte:head>
