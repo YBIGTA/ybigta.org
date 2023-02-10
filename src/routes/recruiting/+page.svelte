@@ -10,7 +10,7 @@
 
 <Seo title="Recruiting" />
 <PageTitle>
-	Recruiting
+	<span slot="title">Recruiting</span>
 	<img src="/images/recruiting.jpeg" alt="recruiting" slot="image" />
 </PageTitle>
 <PageSection>
