@@ -10,4 +10,3 @@
 <MissionHero />
 <InfoHero />
 <TeamHero />
-<RecruitingHero />

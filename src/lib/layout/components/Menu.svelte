@@ -29,8 +29,11 @@
 	li.sub {
 		font-size: 1rem;
 		font-weight: 400;
-		padding: 8px 16px;
-		border-radius: 4px;
+		a {
+			display: block;
+			padding: 8px 16px;
+			border-radius: 4px;
+		}
 		&:hover,
 		&:focus {
 			background-color: #f5f5f5;
