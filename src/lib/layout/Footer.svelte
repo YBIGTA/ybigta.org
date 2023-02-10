@@ -1,5 +1,5 @@
 <script>
-	import ContactIcon from './ContactIcon.svelte';
+	import ContactIcon from './components/ContactIcon.svelte';
 </script>
 
 <footer>
@@ -31,7 +31,7 @@
 	</ul>
 </footer>
 
-<style>
+<style lang="scss">
 	footer {
 		width: 100%;
 		height: 12rem;
@@ -50,13 +50,15 @@
 		flex-direction: column;
 		align-items: flex-start;
 		gap: 0.75rem;
-	}
-	.logo-container > .logo {
-		font-family: 'FacebookLetterFaces', sans-serif;
-		font-size: 2rem;
-	}
-	.logo-container > .copyright {
-		font-size: 0.8rem;
+
+		.logo {
+			font-family: 'FacebookLetterFaces', sans-serif;
+			font-size: 2rem;
+		}
+
+		.copyright {
+			font-size: 0.8rem;
+		}
 	}
 
 	ul {

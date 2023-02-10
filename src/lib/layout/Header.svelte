@@ -1,3 +1,8 @@
+<script>
+	import Menu from './components/Menu.svelte';
+	import MenuGroup from './components/MenuGroup.svelte';
+</script>
+
 <header>
 	<h1>
 		<a href="/">
@@ -5,27 +10,22 @@
 		</a>
 	</h1>
 	<nav>
-		<ul class="ybigta-menu">
-			<li>
-				<a href="/about">About</a>
-			</li>
-			<li>
-				<a href="/archive">Archive</a>
-			</li>
-			<li>
-				<a href="/wiki">Wiki</a>
-			</li>
-			<!-- <li>
-				<a href="/blog">Blog</a>
-			</li>
-			<li>
-				<a href="/members">Members</a>
-			</li> -->
+		<ul class="menu-list">
+			<MenuGroup>
+				About
+				<svelte:fragment slot="submenus">
+					<Menu type="sub" href="/about">About Us</Menu>
+					<Menu type="sub" href="/curriculum">Curriculum</Menu>
+					<Menu type="sub" href="/recruiting">Recruiting</Menu>
+				</svelte:fragment>
+			</MenuGroup>
+			<Menu href="/archive">Archive</Menu>
+			<Menu href="/wiki">Wiki</Menu>
 		</ul>
 	</nav>
 </header>
 
-<style>
+<style lang="scss">
 	header {
 		width: 100%;
 		display: flex;
@@ -33,7 +33,7 @@
 		align-items: center;
 		height: 5rem;
 
-		padding: 1.5rem 3rem 1rem 3rem;
+		padding: 0rem 3rem;
 		background-color: #fff;
 
 		position: sticky;
@@ -44,23 +44,18 @@
 
 	h1 {
 		position: absolute;
-	}
-	h1 img {
-		height: 2.5rem;
+		img {
+			height: 2.5rem;
+		}
 	}
 
 	nav {
 		margin: 0 auto;
 	}
 
-	.ybigta-menu {
+	.menu-list {
 		display: flex;
 		justify-content: flex-end;
-		gap: 2rem;
-	}
-
-	.ybigta-menu li {
-		font-size: 1.125rem;
-		font-weight: 500;
+		gap: 4px;
 	}
 </style>

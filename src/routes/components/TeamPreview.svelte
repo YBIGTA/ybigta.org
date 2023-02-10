@@ -10,7 +10,7 @@
 	</article>
 </li>
 
-<style>
+<style lang="scss">
 	li {
 		display: flex;
 		flex-direction: column;
@@ -36,18 +36,18 @@
 		flex-direction: column;
 		gap: 1rem;
 		background-color: white;
-	}
 
-	article > h6 {
-		font-size: 1.25rem;
-		font-weight: 500;
-	}
+		h6 {
+			font-size: 1.25rem;
+			font-weight: 500;
+		}
 
-	article > p {
-		flex: 1 1 auto;
-		overflow: hidden;
-		color: #888;
-		word-break: keep-all;
-		line-height: 1.2;
+		p {
+			flex: 1 1 auto;
+			overflow: hidden;
+			color: #888;
+			word-break: keep-all;
+			line-height: 1.2;
+		}
 	}
 </style>
