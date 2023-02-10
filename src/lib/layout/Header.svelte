@@ -6,7 +6,7 @@
 <header>
 	<h1>
 		<a href="/">
-			<img alt="ybigta logo" src="/img/ybigta-text.svg" />
+			<img alt="ybigta logo" src="/icons/ybigta-text.svg" />
 		</a>
 	</h1>
 	<nav>

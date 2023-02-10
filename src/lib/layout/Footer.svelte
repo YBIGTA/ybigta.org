@@ -23,7 +23,7 @@
 			<i slot="icon" class="bi bi-github" />
 		</ContactIcon>
 		<ContactIcon href="http://pf.kakao.com/_KxcxkBK">
-			<img slot="icon" class="kakao-icon" src="/img/kakaotalk.svg" alt="kakaotalk icon" />
+			<img slot="icon" class="kakao-icon" src="/icons/kakaotalk.svg" alt="kakaotalk icon" />
 		</ContactIcon>
 		<ContactIcon href="mailto:yonseibigdata@gmail.com">
 			<i slot="icon" class="bi bi-envelope-fill" />
