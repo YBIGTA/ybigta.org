@@ -10,16 +10,18 @@
 		if (!canvas) return;
 
 		const renderer = new THREE.WebGLRenderer({ canvas, antialias: true });
+		renderer.setSize(window.innerWidth, window.innerHeight - 80);
 
-		const scene = new THREE.Scene();
 		const camera = new THREE.PerspectiveCamera(
 			45,
 			window.innerWidth / (window.innerHeight - 80),
 			1,
 			1000
 		);
-		camera.position.set(0, 0, 48);
+		camera.position.set(0, 3, 48);
 
+		const scene = new THREE.Scene();
+		scene.background = new THREE.Color(0x316db2);
 		const ambientLight = new THREE.AmbientLight(0xffffff, 0.9);
 		ambientLight.castShadow = true;
 		scene.add(ambientLight);
@@ -27,15 +29,13 @@
 		directionalLight.position.set(0, 32, 64);
 		scene.add(directionalLight);
 
-		window.addEventListener('resize', onWindowResize, false);
-
 		let loadedModel: GLTF;
 		const loader = new GLTFLoader();
-		loader.load('/assets/models/shiba/scene.gltf', (gltf) => {
+		loader.load('/assets/models/text/scene.gltf', (gltf) => {
 			loadedModel = gltf;
 			scene.add(loadedModel.scene);
-			loadedModel.scene.scale.set(10, 10, 10);
-			// loadedModel.scene.position.set(0, 0, 0);
+			loadedModel.scene.scale.set(3, 3, 3);
+			loadedModel.scene.position.set(0, 0, 0);
 			// loadedModel.scene.rotation.set(0, 0, 0);
 		});
 
@@ -44,12 +44,10 @@
 			camera.updateProjectionMatrix();
 			renderer.setSize(window.innerWidth, window.innerHeight - 80);
 		}
+		window.addEventListener('resize', onWindowResize, false);
 
 		function animate() {
 			requestAnimationFrame(animate);
-			// if (loadedModel) {
-			// 	loadedModel.scene.rotation.y += 0.01;
-			// }
 			renderer.render(scene, camera);
 		}
 		animate();
@@ -84,8 +82,6 @@
 		position: absolute;
 		top: 0;
 		left: 0;
-		width: 100%;
-		height: calc(100vh - 5rem);
 	}
 
 	span {
