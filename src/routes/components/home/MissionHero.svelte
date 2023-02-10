@@ -31,10 +31,10 @@
 
 		let loadedModel: GLTF;
 		const loader = new GLTFLoader();
-		loader.load('/assets/models/text/scene.gltf', (gltf) => {
+		loader.load('/assets/models/shiba/scene.gltf', (gltf) => {
 			loadedModel = gltf;
 			scene.add(loadedModel.scene);
-			loadedModel.scene.scale.set(3, 3, 3);
+			loadedModel.scene.scale.set(10, 10, 10);
 			loadedModel.scene.position.set(0, 0, 0);
 			// loadedModel.scene.rotation.set(0, 0, 0);
 		});
