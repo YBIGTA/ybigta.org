@@ -9,58 +9,36 @@
 </script>
 
 <Seo title="Recruiting" />
-<PageTitle>
-	Recruiting
-	<img src="/images/recruiting.jpeg" alt="recruiting" slot="image" />
-</PageTitle>
-<PageSection>
-	<h3 slot="title">지원 자격</h3>
-	<Requisites slot="content" />
-</PageSection>
-<PageSection>
-	<span slot="title">Process</span>
-	<RecruitingProcess slot="content" />
-</PageSection>
-<PageSection>
-	<span slot="title">FAQ</span>
-	<FAQ slot="content" />
-</PageSection>
+<div class="container">
+	<PageTitle>
+		<span slot="title">Recruiting</span>
+		<img src="/images/recruiting/cover.jpeg" alt="recruiting" slot="image" />
+	</PageTitle>
+	<PageSection>
+		<h3 slot="title">지원 자격</h3>
+		<Requisites slot="content" />
+	</PageSection>
+	<PageSection>
+		<span slot="title">Process</span>
+		<RecruitingProcess slot="content" />
+	</PageSection>
+	<PageSection>
+		<span slot="title">FAQ</span>
+		<FAQ slot="content" />
+	</PageSection>
+</div>
 <div class="placeholder" />
 
 <!-- <ApplySection /> -->
 <style lang="scss">
+	div.container {
+		max-width: 1200px;
+		margin: 0 auto;
+	}
 	img {
 		width: 100%;
-		height: 400px;
+		aspect-ratio: 16 / 6;
 		object-fit: cover;
-	}
-
-	.apply-section {
-		width: 100%;
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		align-items: center;
-		gap: 2rem;
-		padding: 4rem 3rem 4rem 3rem;
-		background-color: aliceblue;
-
-		h6 {
-			font-size: 2rem;
-			font-weight: 700;
-		}
-
-		button {
-			width: 200px;
-			height: 50px;
-			border: none;
-			border-radius: 8px;
-			background-color: black;
-			color: white;
-			font-size: 1.2rem;
-			font-weight: 500;
-			cursor: pointer;
-		}
 	}
 
 	div.placeholder {

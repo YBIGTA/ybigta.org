@@ -1,9 +1,16 @@
 <section class="page-title">
 	<h2>
-		<slot />
+		<slot name="title" />
 	</h2>
+	{#if $$slots.desc}
+		<p>
+			<slot name="desc" />
+		</p>
+	{/if}
 	{#if $$slots.image}
-		<slot name="image" />
+		<div class="image-container">
+			<slot name="image" />
+		</div>
 	{/if}
 </section>
 
@@ -20,6 +27,16 @@
 		font-weight: 700;
 		line-height: 1.5;
 		margin: 0 3rem;
-		margin-bottom: 1rem;
+	}
+	p {
+		font-size: 1.25rem;
+		font-weight: 400;
+		line-height: 1.5;
+		color: #444;
+		margin: 0 3rem;
+	}
+
+	.image-container {
+		margin-top: 1rem;
 	}
 </style>

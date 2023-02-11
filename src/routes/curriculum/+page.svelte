@@ -1,37 +1,42 @@
 <script>
+	import PageSection from '$lib/layout/PageSection.svelte';
+	import PageTitle from '$lib/layout/PageTitle.svelte';
 	import Seo from '$lib/layout/Seo.svelte';
+	import MainCurriculum from './components/MainCurriculum.svelte';
+	import NewbieCurriculum from './components/NewbieCurriculum.svelte';
 </script>
 
-<Seo title="Curriculum" />
-<section>
-	<h2>Curriculum</h2>
-	<p>데이터에 대한 다양한 경험과 전문성을 갖추고, 이를 활용하여 실제 프로젝트를 진행합니다.</p>
-</section>
+<Seo
+	title="Curriculum"
+	desc="데이터에 대한 다양한 전문성을 갖추고, 이를 활용한 프로젝트를 진행합니다."
+/>
 
-<style>
-	section {
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		justify-content: center;
+<div class="container">
+	<PageTitle>
+		<span slot="title">Curriculum</span>
+		<span slot="desc">
+			데이터에 대한 다양한 경험과 전문성을 갖추고, 이를 활용하여 실제 프로젝트를 진행합니다.
+		</span>
+		<img id="page-cover" src="/images/curriculum/cover.jpeg" alt="curriculum" slot="image" />
+	</PageTitle>
+	<NewbieCurriculum />
+	<MainCurriculum />
+</div>
+<div class="placeholder" />
 
+<style lang="scss">
+	div.container {
+		max-width: 1200px;
+		margin: 0 auto;
+	}
+	img#page-cover {
 		width: 100%;
-		padding: 4rem 3rem;
-
-		background-color: rgb(0, 96, 180);
-		color: #fff;
+		aspect-ratio: 16 / 6;
+		object-fit: cover;
+		object-position: 50% 40%;
 	}
 
-	h2 {
-		font-size: 2.5rem;
-		font-weight: 700;
-		margin-bottom: 1rem;
-	}
-
-	p {
-		font-size: 1.25rem;
-		font-weight: 400;
-		line-height: 1.5;
-		text-align: center;
+	div.placeholder {
+		height: 100px;
 	}
 </style>
