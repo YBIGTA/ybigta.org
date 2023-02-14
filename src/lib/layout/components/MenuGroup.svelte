@@ -3,10 +3,11 @@
 	import { onMount } from 'svelte';
 
 	let active = false;
+	export let id = '';
 
 	onMount(() => {
-		const menu = document.querySelector('.menu');
-		const menuGroup: HTMLDivElement | null = document.querySelector('.submenu');
+		const menu = document.getElementById(id);
+		const menuGroup: HTMLDivElement | null = document.querySelector(`#${id} > .submenu`);
 
 		if (!menu || !menuGroup) return;
 
@@ -42,7 +43,7 @@
 	});
 </script>
 
-<li class="menu" tabindex="0" role="button">
+<li {id} class="menu" tabindex="0" role="button">
 	<span class="menu__title">
 		<slot />
 	</span>

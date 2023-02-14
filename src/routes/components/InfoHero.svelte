@@ -1,8 +1,12 @@
+<script>
+	import { InternalLinks } from '$lib/constants/links';
+</script>
+
 <section>
 	<div class="container">
 		<div class="item">Archive</div>
 		<div class="item">
-			<a href="/about">About Us</a>
+			<a href={InternalLinks.AboutUs}>About Us</a>
 		</div>
 		<div class="item">Curriculum</div>
 		<div class="item">Wiki</div>
