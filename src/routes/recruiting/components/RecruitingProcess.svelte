@@ -53,19 +53,20 @@
 			font-weight: 500;
 			margin-bottom: 1rem;
 			word-break: keep-all;
+			color: var(--color-title);
 		}
 		p {
 			word-break: keep-all;
-			color: #666;
+			color: var(--color-text);
 			line-height: 1.2;
 		}
 		&:hover {
-			background-color: rgb(0, 109, 205);
+			background-color: var(--color-primary);
 			h6 {
-				color: white;
+				color: #fff;
 			}
 			p {
-				color: #fbfbfb;
+				color: #fff;
 			}
 		}
 	}

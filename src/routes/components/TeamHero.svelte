@@ -35,12 +35,13 @@
 		flex-direction: column;
 		padding: 3rem 3rem 4rem 3rem;
 		gap: 2rem;
-		background-color: #fbfbfb;
+		background-color: var(--color-background);
 	}
 
 	h3 {
 		font-size: 2rem;
 		font-weight: 600;
+		color: var(--color-title);
 	}
 
 	ul {

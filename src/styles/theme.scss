@@ -1,0 +1,46 @@
+@use './tokens/color.scss' as color;
+
+@mixin variables {
+}
+
+@mixin dark-theme {
+	--color-primary: #{color.$blue-500};
+
+	--color-header-background: #{color.$black};
+	@supports ((-webkit-backdrop-filter: blur(0)) or (backdrop-filter: blur(0))) or
+		(-webkit-backdrop-filter: blur(0)) {
+		--color-header-background: #{rgba(color.$black, 0.75)};
+	}
+
+	--color-footer-background: #{color.$black};
+	--color-background: #{color.$black};
+	--color-surface-background: #{color.$neutral-900};
+	--color-surface-2-background: #{color.$neutral-800};
+
+	--color-title: #{color.$neutral-50};
+	--color-subtitle: #{color.$neutral-100};
+	--color-text: #{color.$neutral-200};
+
+	--color-border: #{color.$neutral-600};
+}
+
+@mixin light-theme {
+	--color-primary: #{color.$blue-500};
+
+	--color-header-background: #{color.$white};
+	@supports ((-webkit-backdrop-filter: blur(0)) or (backdrop-filter: blur(0))) or
+		(-webkit-backdrop-filter: blur(0)) {
+		--color-header-background: #{rgba(color.$white, 0.95)};
+	}
+
+	--color-footer-background: #{color.$white};
+	--color-background: #{color.$white};
+	--color-surface-background: #{color.$white};
+	--color-surface-2-background: #{color.$white};
+
+	--color-title: #{color.$neutral-900};
+	--color-subtitle: #{color.$neutral-800};
+	--color-text: #{color.$neutral-700};
+
+	--color-border: #{color.$neutral-300};
+}

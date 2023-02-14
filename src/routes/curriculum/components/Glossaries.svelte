@@ -14,6 +14,7 @@
 		:global(li) {
 			margin-bottom: 1rem;
 			word-break: keep-all;
+			color: var(--color-text);
 
 			&:last-child {
 				margin-bottom: 0;

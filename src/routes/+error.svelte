@@ -43,9 +43,11 @@
 	h2 {
 		font-size: 6rem;
 		font-family: 'FacebookLetterFaces', 'Pretendard Variable', Pretendard, -apple-system, sans-serif;
+		color: var(--color-title);
 	}
 	p {
 		font-size: 1.5rem;
 		font-weight: 500;
+		color: var(--color-text);
 	}
 </style>

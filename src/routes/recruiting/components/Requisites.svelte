@@ -21,6 +21,7 @@
 		font-size: 1.2rem;
 		line-height: 1.3;
 		margin-bottom: 0.5rem;
+		color: var(--color-subtitle);
 		&:last-child {
 			margin-bottom: 0;
 		}

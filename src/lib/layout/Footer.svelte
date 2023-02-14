@@ -1,5 +1,6 @@
 <script>
 	import ContactIcon from './components/ContactIcon.svelte';
+	import KakaoLogo from './assets/KakaoLogo.svelte';
 </script>
 
 <footer>
@@ -23,7 +24,7 @@
 			<i slot="icon" class="bi bi-github" />
 		</ContactIcon>
 		<ContactIcon href="http://pf.kakao.com/_KxcxkBK">
-			<img slot="icon" class="kakao-icon" src="/icons/kakaotalk.svg" alt="kakaotalk icon" />
+			<KakaoLogo slot="icon" />
 		</ContactIcon>
 		<ContactIcon href="mailto:yonseibigdata@gmail.com">
 			<i slot="icon" class="bi bi-envelope-fill" />
@@ -35,8 +36,9 @@
 	footer {
 		width: 100%;
 		height: 12rem;
-		background-color: black;
-		color: white;
+		background-color: var(--color-footer-background);
+		color: var(--color-title);
+		border-top: 1px solid var(--color-border);
 
 		padding: 0rem 3rem;
 

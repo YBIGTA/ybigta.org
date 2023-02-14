@@ -31,7 +31,9 @@
 	</article>
 </section>
 
-<style>
+<style lang="scss">
+	@use '../../../styles/tokens/color.scss' as color;
+
 	section {
 		display: flex;
 		flex-direction: column;
@@ -40,7 +42,10 @@
 		gap: 3rem;
 
 		padding: 5rem 3rem 7rem 3rem;
-		background-color: #f5f5f5;
+
+		@media (prefers-color-scheme: light) {
+			background-color: color.$neutral-50;
+		}
 	}
 
 	h2 {
@@ -51,6 +56,7 @@
 		display: flex;
 		flex-direction: column;
 		align-items: center;
+		color: var(--color-title);
 	}
 
 	#about-ybigta :global(p) {
@@ -60,6 +66,8 @@
 		font-size: 1.2rem;
 		font-weight: 300;
 		line-height: 1.3;
+
+		color: var(--color-text);
 
 		margin-top: 1.5rem;
 		white-space: pre-line;

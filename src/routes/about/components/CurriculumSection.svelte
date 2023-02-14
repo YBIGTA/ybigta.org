@@ -24,10 +24,11 @@
 		display: flex;
 		flex-direction: column;
 		align-items: center;
+		color: var(--color-title);
 	}
 
 	button {
-		background-color: #000;
+		background-color: var(--color-primary);
 		color: #fff;
 		font-size: 1.5rem;
 		font-weight: 700;
