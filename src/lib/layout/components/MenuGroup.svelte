@@ -55,7 +55,7 @@
 </li>
 
 <style lang="scss">
-	@use '../../../styles/tokens/color.scss' as color;
+	@use '$styles/tokens/color.scss' as color;
 
 	@media (prefers-color-scheme: dark) {
 		.menu__title:hover,

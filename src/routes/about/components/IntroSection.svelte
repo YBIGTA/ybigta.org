@@ -32,7 +32,7 @@
 </section>
 
 <style lang="scss">
-	@use '../../../styles/tokens/color.scss' as color;
+	@use '$styles/tokens/color.scss' as color;
 
 	section {
 		display: flex;
