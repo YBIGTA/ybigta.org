@@ -1,0 +1,8 @@
+@use './tokens/layout.scss' as layout;
+
+@mixin variables {
+	--z-index-header: layout.$zindex-header;
+	--z-index-content: layout.$zindex-content;
+
+	--horiz-padding-main: clamp(1rem, 5vw, 3rem);
+}

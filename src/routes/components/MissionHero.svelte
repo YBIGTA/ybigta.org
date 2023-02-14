@@ -64,7 +64,7 @@
 	section {
 		width: 100%;
 		min-height: calc(100vh - 5rem);
-		padding: 8rem 3rem;
+		padding: 8rem var(--horiz-padding-main);
 		position: relative;
 
 		display: flex;

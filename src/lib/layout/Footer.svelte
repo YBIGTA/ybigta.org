@@ -40,7 +40,7 @@
 		color: var(--color-title);
 		border-top: 1px solid var(--color-border);
 
-		padding: 0rem 3rem;
+		padding: 0rem var(--horiz-padding-main);
 
 		display: flex;
 		justify-content: space-between;

@@ -45,7 +45,7 @@
 		align-items: center;
 		height: 5rem;
 
-		padding: 0rem 3rem;
+		padding: 0rem var(--horiz-padding-main);
 		// background-color: var(--color-header-background);
 		color: var(--color-title);
 		border-bottom: 1px solid var(--color-border);
