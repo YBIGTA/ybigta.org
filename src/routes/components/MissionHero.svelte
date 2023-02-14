@@ -21,7 +21,7 @@
 		camera.position.set(0, 3, 48);
 
 		const scene = new THREE.Scene();
-		scene.background = new THREE.Color(0x316db2);
+		// scene.background = new THREE.Color(0x316db2);
 		const ambientLight = new THREE.AmbientLight(0xffffff, 0.9);
 		ambientLight.castShadow = true;
 		scene.add(ambientLight);
@@ -64,7 +64,6 @@
 	section {
 		width: 100%;
 		min-height: calc(100vh - 5rem);
-		background-color: #316db2;
 		padding: 8rem 3rem;
 		position: relative;
 

@@ -26,7 +26,7 @@
 		width: 100%;
 		padding: 16px;
 		border-radius: 8px;
-		border: 1px solid #ccc;
+		border: 1px solid var(--color-border);
 		position: relative;
 
 		cursor: pointer;
@@ -35,6 +35,7 @@
 		font-weight: 500;
 		font-size: 1.2rem;
 		line-height: 1.2;
+		color: var(--color-title);
 
 		&::before {
 			content: 'Q';
@@ -60,6 +61,7 @@
 		line-height: 1.2;
 		word-break: keep-all;
 		white-space: pre-wrap;
+		color: var(--color-subtitle);
 
 		:global(strong) {
 			font-weight: 500;

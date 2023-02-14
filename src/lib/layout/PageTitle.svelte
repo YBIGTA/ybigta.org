@@ -27,6 +27,7 @@
 		font-weight: 700;
 		line-height: 1.5;
 		margin: 0 3rem;
+		color: var(--color-title);
 	}
 	p {
 		font-size: 1.25rem;
@@ -34,6 +35,7 @@
 		line-height: 1.5;
 		color: #444;
 		margin: 0 3rem;
+		color: var(--color-subtitle);
 	}
 
 	.image-container {

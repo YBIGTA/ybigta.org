@@ -34,7 +34,12 @@
 		height: 5rem;
 
 		padding: 0rem 3rem;
-		background-color: #fff;
+		// background-color: var(--color-header-background);
+		color: var(--color-title);
+		border-bottom: 1px solid var(--color-border);
+
+		background-color: var(--color-header-background);
+		backdrop-filter: blur(8px);
 
 		position: sticky;
 		top: 0;

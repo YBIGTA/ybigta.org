@@ -22,11 +22,12 @@
 		font-weight: 400;
 		line-height: 1.5;
 		margin-top: -0.5rem;
-		color: #444;
+		color: var(--color-subtitle);
 	}
 	h3 {
 		font-size: 2.5rem;
 		font-weight: 700;
 		margin-bottom: 1.5rem;
+		color: var(--color-title);
 	}
 </style>
