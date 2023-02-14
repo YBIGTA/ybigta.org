@@ -1,6 +1,10 @@
+<script>
+	import { InternalLinks } from '$lib/constants/links';
+</script>
+
 <section>
 	<h2>What We Do</h2>
-	<a href="/curriculum">
+	<a href={InternalLinks.Curriculum}>
 		<button type="button">Explore Our Curriculum</button>
 	</a>
 </section>

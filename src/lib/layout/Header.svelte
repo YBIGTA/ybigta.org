@@ -1,4 +1,5 @@
 <script>
+	import { ExternalLinks, InternalLinks } from '$lib/constants/links';
 	import Menu from './components/Menu.svelte';
 	import MenuGroup from './components/MenuGroup.svelte';
 </script>
@@ -11,16 +12,27 @@
 	</h1>
 	<nav>
 		<ul class="menu-list">
-			<MenuGroup>
+			<MenuGroup id="about-menu">
 				About
 				<svelte:fragment slot="submenus">
-					<Menu type="sub" href="/about">About Us</Menu>
-					<Menu type="sub" href="/curriculum">Curriculum</Menu>
-					<Menu type="sub" href="/recruiting">Recruiting</Menu>
+					<Menu type="sub" href={InternalLinks.AboutUs}>About Us</Menu>
+					<Menu type="sub" href={InternalLinks.Curriculum}>Curriculum</Menu>
+					<Menu type="sub" href={InternalLinks.Recruiting}>Recruiting</Menu>
 				</svelte:fragment>
 			</MenuGroup>
-			<Menu href="/archive">Archive</Menu>
-			<Menu href="/wiki">Wiki</Menu>
+			<Menu type="main" target="_blank" href={ExternalLinks.Archive}>Archive</Menu>
+			<MenuGroup id="wiki-menu">
+				Wiki
+				<svelte:fragment slot="submenus">
+					<Menu type="sub" target="_blank" href={ExternalLinks.DataEngineeringWiki}>
+						Data Engineering
+					</Menu>
+					<Menu type="sub" target="_blank" href={ExternalLinks.DataScienceWiki}>Data Science</Menu>
+					<Menu type="sub" target="_blank" href={ExternalLinks.DataAnalyticsWiki}
+						>Data Analytics</Menu
+					>
+				</svelte:fragment>
+			</MenuGroup>
 		</ul>
 	</nav>
 </header>
