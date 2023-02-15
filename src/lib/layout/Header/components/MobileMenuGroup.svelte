@@ -4,7 +4,6 @@
 	const accordion = getAccordion('38px');
 
 	export let open = false;
-	console.log(open);
 </script>
 
 <li class="menugroup" use:accordion={open}>
