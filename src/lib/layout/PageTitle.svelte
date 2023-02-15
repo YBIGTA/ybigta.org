@@ -15,6 +15,7 @@
 </section>
 
 <style lang="scss">
+	@use '$styles/variables.scss' as *;
 	section {
 		width: 100%;
 		display: flex;
@@ -23,19 +24,17 @@
 		padding-top: 4rem;
 	}
 	h2 {
-		font-size: 4rem;
+		@include heading1;
 		font-weight: 700;
-		line-height: 1.5;
 		margin: 0 var(--horiz-padding-main);
+		margin-bottom: 1rem;
 		color: var(--color-title);
 	}
 	p {
-		font-size: 1.25rem;
+		@include body1;
 		font-weight: 400;
-		line-height: 1.5;
-		color: #444;
-		margin: 0 var(--horiz-padding-main);
 		color: var(--color-subtitle);
+		margin: 0 var(--horiz-padding-main);
 	}
 
 	.image-container {

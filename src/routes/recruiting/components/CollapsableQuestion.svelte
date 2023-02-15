@@ -22,6 +22,7 @@
 </li>
 
 <style lang="scss">
+	@use '$styles/variables.scss' as *;
 	li {
 		width: 100%;
 		padding: 16px;
@@ -33,8 +34,7 @@
 	}
 	div.question {
 		font-weight: 500;
-		font-size: 1.2rem;
-		line-height: 1.2;
+		@include heading6;
 		color: var(--color-title);
 		padding-right: 20px;
 
@@ -57,9 +57,8 @@
 	div.answer {
 		display: none;
 		margin-top: 1.5rem;
-		font-size: 1.1rem;
 		font-weight: 300;
-		line-height: 1.2;
+		@include body1;
 		word-break: keep-all;
 		white-space: pre-wrap;
 		color: var(--color-subtitle);

@@ -13,6 +13,6 @@
 
 <style>
 	main {
-		min-height: calc(100vh - 5rem - 12rem);
+		min-height: var(--min-height-main);
 	}
 </style>

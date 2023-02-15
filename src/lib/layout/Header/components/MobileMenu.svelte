@@ -13,15 +13,14 @@
 </li>
 
 <style lang="scss">
+	@use '$styles/variables.scss' as *;
 	li.main {
-		font-size: 2rem;
 		font-weight: 700;
-		line-height: 1.2;
+		@include heading3;
 	}
 
 	li.sub {
-		font-size: 1.2rem;
 		font-weight: 400;
-		line-height: 1.2;
+		@include heading5;
 	}
 </style>

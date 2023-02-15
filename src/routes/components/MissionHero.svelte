@@ -63,7 +63,7 @@
 <style>
 	section {
 		width: 100%;
-		min-height: calc(100vh - 5rem);
+		min-height: var(--min-height-main);
 		padding: 8rem var(--horiz-padding-main);
 		position: relative;
 

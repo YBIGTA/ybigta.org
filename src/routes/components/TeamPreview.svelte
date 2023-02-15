@@ -11,6 +11,7 @@
 </li>
 
 <style lang="scss">
+	@use '$styles/variables.scss' as *;
 	li {
 		display: flex;
 		flex-direction: column;
@@ -38,16 +39,16 @@
 		background-color: white;
 
 		h6 {
-			font-size: 1.25rem;
 			font-weight: 500;
+			@include heading6;
 		}
 
 		p {
+			@include body1;
 			flex: 1 1 auto;
 			overflow: hidden;
-			color: #888;
+			color: var(--color-text);
 			word-break: keep-all;
-			line-height: 1.2;
 		}
 	}
 </style>

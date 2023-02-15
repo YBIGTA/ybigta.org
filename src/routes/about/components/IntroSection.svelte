@@ -33,6 +33,7 @@
 
 <style lang="scss">
 	@use '$styles/tokens/color.scss' as color;
+	@use '$styles/variables.scss' as *;
 
 	section {
 		display: flex;
@@ -41,7 +42,7 @@
 		align-items: center;
 		gap: 3rem;
 
-		padding: 5rem 3rem 7rem 3rem;
+		padding: 5rem var(--horiz-padding-main) 7rem var(--horiz-padding-main);
 
 		@media (prefers-color-scheme: light) {
 			background-color: color.$neutral-50;
@@ -49,13 +50,13 @@
 	}
 
 	h2 {
-		font-size: 2.5rem;
+		@include heading2;
+		width: 100%;
+		max-width: 760px;
 		font-weight: 700;
-		line-height: 1.3;
-		text-align: center;
+		text-align: start;
 		display: flex;
 		flex-direction: column;
-		align-items: center;
 		color: var(--color-title);
 	}
 
@@ -63,9 +64,8 @@
 		text-align: start;
 		width: 100%;
 		max-width: 760px;
-		font-size: 1.2rem;
 		font-weight: 300;
-		line-height: 1.3;
+		@include body1;
 
 		color: var(--color-text);
 

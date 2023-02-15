@@ -9,7 +9,8 @@
 	</a>
 </section>
 
-<style>
+<style lang="scss">
+	@use '$styles/variables.scss' as *;
 	section {
 		width: 100%;
 		padding: 4rem 3rem;
@@ -21,9 +22,8 @@
 	}
 
 	h2 {
-		font-size: 2.5rem;
+		@include heading2;
 		font-weight: 700;
-		line-height: 1.3;
 		text-align: center;
 		display: flex;
 		flex-direction: column;
@@ -32,9 +32,9 @@
 	}
 
 	button {
+		@include heading4;
 		background-color: var(--color-primary);
 		color: #fff;
-		font-size: 1.5rem;
 		font-weight: 700;
 		padding: 1rem 2rem;
 		border: none;

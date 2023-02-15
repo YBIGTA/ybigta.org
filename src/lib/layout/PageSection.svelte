@@ -12,20 +12,21 @@
 	{/if}
 </section>
 
-<style>
+<style lang="scss">
+	@use '$styles/variables.scss' as *;
+
 	section {
 		width: 100%;
 		padding: 4rem var(--horiz-padding-main) 2rem var(--horiz-padding-main);
 	}
 	p {
-		font-size: 1.25rem;
+		@include body1;
 		font-weight: 400;
-		line-height: 1.5;
 		margin-top: -0.5rem;
 		color: var(--color-subtitle);
 	}
 	h3 {
-		font-size: 2.5rem;
+		@include heading3;
 		font-weight: 700;
 		margin-bottom: 1.5rem;
 		color: var(--color-title);

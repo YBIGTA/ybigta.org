@@ -73,7 +73,7 @@
 <style lang="scss">
 	div.menus {
 		position: absolute;
-		height: calc(100vh - 5rem);
+		height: var(--min-height-main);
 		top: 5rem;
 		left: 0;
 		width: 100vw;
