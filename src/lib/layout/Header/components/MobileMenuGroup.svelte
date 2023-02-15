@@ -24,17 +24,28 @@
 	export let open = false;
 </script>
 
-<li class="menugroup" use:accordion={open}>
-	<button class="title" type="button" on:click>
-		<slot name="title" />
-	</button>
-	<ul class="submenus" class:open>
-		<slot name="submenus" />
-	</ul>
-</li>
+<button on:click>
+	<li class="menugroup" use:accordion={open}>
+		<h6 class="title">
+			<slot name="title" />
+		</h6>
+		<ul class="submenus" class:open>
+			<slot name="submenus" />
+		</ul>
+	</li>
+</button>
 
 <style lang="scss">
 	@use '$styles/variables.scss' as *;
+	button {
+		width: 100%;
+		cursor: pointer;
+	}
+	.menugroup {
+		display: flex;
+		width: 100%;
+	}
+
 	.title {
 		font-weight: 700;
 		@include heading3;
@@ -46,11 +57,6 @@
 			width: 140px;
 		}
 		width: 160px;
-	}
-
-	.menugroup {
-		display: flex;
-		width: 100%;
 	}
 
 	.submenus {

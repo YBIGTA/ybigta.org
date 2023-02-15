@@ -14,13 +14,20 @@
 
 <style lang="scss">
 	@use '$styles/variables.scss' as *;
-	li.main {
-		font-weight: 700;
-		@include heading3;
-	}
+	li {
+		width: 100%;
+		&.main {
+			font-weight: 700;
+			@include heading3;
+		}
 
-	li.sub {
-		font-weight: 400;
-		@include heading5;
+		&.sub {
+			font-weight: 400;
+			@include heading5;
+		}
+	}
+	a {
+		display: block;
+		width: 100%;
 	}
 </style>
