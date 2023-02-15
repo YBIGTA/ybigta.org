@@ -26,7 +26,7 @@
 		font-size: 4rem;
 		font-weight: 700;
 		line-height: 1.5;
-		margin: 0 3rem;
+		margin: 0 var(--horiz-padding-main);
 		color: var(--color-title);
 	}
 	p {
@@ -34,7 +34,7 @@
 		font-weight: 400;
 		line-height: 1.5;
 		color: #444;
-		margin: 0 3rem;
+		margin: 0 var(--horiz-padding-main);
 		color: var(--color-subtitle);
 	}
 

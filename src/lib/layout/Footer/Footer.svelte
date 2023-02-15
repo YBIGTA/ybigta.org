@@ -35,17 +35,17 @@
 <style lang="scss">
 	footer {
 		width: 100%;
-		height: 12rem;
 		background-color: var(--color-footer-background);
 		color: var(--color-title);
 		border-top: 1px solid var(--color-border);
 
-		padding: 0rem var(--horiz-padding-main);
+		padding: 3rem var(--horiz-padding-main);
 
 		display: flex;
-		flex-wrap: wrap;
+		flex-wrap: wrap-reverse;
 		justify-content: space-between;
 		align-items: center;
+		gap: 2rem;
 	}
 
 	.logo-container {
@@ -69,8 +69,5 @@
 		align-items: center;
 		font-size: 1.25rem;
 		gap: 1.5rem;
-	}
-	.kakao-icon {
-		width: 1.25rem;
 	}
 </style>

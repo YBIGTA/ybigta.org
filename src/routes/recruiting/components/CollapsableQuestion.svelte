@@ -36,6 +36,7 @@
 		font-size: 1.2rem;
 		line-height: 1.2;
 		color: var(--color-title);
+		padding-right: 20px;
 
 		&::before {
 			content: 'Q';

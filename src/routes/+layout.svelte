@@ -1,8 +1,8 @@
 <script>
 	import '$styles/global.scss';
 	import '$styles/reset.css';
-	import Header from '$lib/layout/Header.svelte';
-	import Footer from '$lib/layout/Footer.svelte';
+	import Header from '$lib/layout/Header/Header.svelte';
+	import Footer from '$lib/layout/Footer/Footer.svelte';
 </script>
 
 <Header />

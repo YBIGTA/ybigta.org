@@ -15,7 +15,7 @@
 <style>
 	section {
 		width: 100%;
-		padding: 4rem 3rem 2rem 3rem;
+		padding: 4rem var(--horiz-padding-main) 2rem var(--horiz-padding-main);
 	}
 	p {
 		font-size: 1.25rem;
