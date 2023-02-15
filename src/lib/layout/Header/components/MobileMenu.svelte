@@ -25,9 +25,12 @@
 			font-weight: 400;
 			@include heading5;
 		}
-	}
-	a {
-		display: block;
-		width: 100%;
+
+		a {
+			display: block;
+			width: 100%;
+			text-align: start;
+			color: var(--color-title);
+		}
 	}
 </style>
