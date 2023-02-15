@@ -3,15 +3,12 @@
 
 	const accordion = getAccordion('38px');
 
-	let open = false;
-
-	function toggle() {
-		open = !open;
-	}
+	export let open = false;
+	console.log(open);
 </script>
 
 <li class="menugroup" use:accordion={open}>
-	<button class="title" type="button" on:click={toggle}>
+	<button class="title" type="button" on:click>
 		<slot name="title" />
 	</button>
 	<ul class="submenus" class:open>

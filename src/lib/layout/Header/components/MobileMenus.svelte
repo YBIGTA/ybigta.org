@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
 	import { ExternalLinks, InternalLinks } from '$lib/constants/links';
 	import { fly } from 'svelte/transition';
 	import MobileMenu from './MobileMenu.svelte';
@@ -6,7 +6,21 @@
 
 	export let active = false;
 
-	function toggleBodyScroll(node) {
+	const enum MenuGroup {
+		About = 'about',
+		Wiki = 'wiki'
+	}
+
+	let openedMenu: MenuGroup | undefined;
+	const toggleMenu = (menu: MenuGroup) => {
+		if (openedMenu === menu) {
+			openedMenu = undefined;
+		} else {
+			openedMenu = menu;
+		}
+	};
+
+	function toggleBodyScroll(node: HTMLElement) {
 		document.body.style.overflow = 'hidden';
 		return {
 			destroy() {
@@ -19,7 +33,12 @@
 {#if active}
 	<div class="menus" use:toggleBodyScroll transition:fly={{ y: 200, duration: 500 }}>
 		<ul>
-			<MobileMenuGroup>
+			<MobileMenuGroup
+				open={openedMenu === MenuGroup.About}
+				on:click={() => {
+					toggleMenu(MenuGroup.About);
+				}}
+			>
 				<span slot="title">About</span>
 				<svelte:fragment slot="submenus">
 					<MobileMenu type="sub" href={InternalLinks.AboutUs}>About Us</MobileMenu>
@@ -28,7 +47,12 @@
 				</svelte:fragment>
 			</MobileMenuGroup>
 			<MobileMenu type="main" target="_blank" href={ExternalLinks.Archive}>Archive</MobileMenu>
-			<MobileMenuGroup>
+			<MobileMenuGroup
+				open={openedMenu === MenuGroup.Wiki}
+				on:click={() => {
+					toggleMenu(MenuGroup.Wiki);
+				}}
+			>
 				<span slot="title">Wiki</span>
 				<svelte:fragment slot="submenus">
 					<MobileMenu type="sub" target="_blank" href={ExternalLinks.DataEngineeringWiki}
