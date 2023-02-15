@@ -25,6 +25,7 @@
 		}
 		aspect-ratio: 9/4;
 		border-radius: 0.5rem;
+		overflow: hidden;
 	}
 	section.text {
 		width: 50%;
@@ -37,7 +38,7 @@
 		gap: 0.5rem;
 
 		h4 {
-			@include heading5;
+			@include heading6;
 			color: var(--color-title);
 			font-weight: 700;
 		}
