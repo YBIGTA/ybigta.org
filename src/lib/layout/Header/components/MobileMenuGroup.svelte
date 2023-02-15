@@ -36,7 +36,7 @@
 <style lang="scss">
 	@use '$styles/variables.scss' as *;
 	.title {
-		font-weight: 600;
+		font-weight: 700;
 		@include heading3;
 		color: var(--color-title);
 
