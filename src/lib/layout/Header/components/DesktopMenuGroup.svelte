@@ -55,22 +55,19 @@
 </li>
 
 <style lang="scss">
-	@use '../../../styles/tokens/color.scss' as color;
+	@use '$styles/tokens/color.scss' as color;
 
-	@media (prefers-color-scheme: dark) {
-		.menu__title:hover,
-		.menu__title:focus {
-			background-color: color.$neutral-700;
-		}
-	}
-	@media (prefers-color-scheme: light) {
-		.menu__title:hover,
-		.menu__title:focus {
-			background-color: color.$neutral-200;
-		}
-
-		.submenu {
-			box-shadow: 0px 5px 5px 5px rgba(0, 0, 0, 0.05);
+	li:hover,
+	li:focus {
+		.menu__title {
+			@media (prefers-color-scheme: dark) {
+				background-color: color.$neutral-700;
+				color: var(--color-primary);
+			}
+			@media (prefers-color-scheme: light) {
+				background-color: color.$neutral-200;
+				color: var(--color-primary);
+			}
 		}
 	}
 
@@ -91,8 +88,13 @@
 		display: none;
 		padding: 16px;
 		border-radius: 4px;
+
 		&.active {
 			display: block;
+		}
+
+		@media (prefers-color-scheme: light) {
+			box-shadow: 0px 5px 5px 5px rgba(0, 0, 0, 0.05);
 		}
 		ul {
 			display: flex;

@@ -33,7 +33,7 @@
 		width: 100%;
 		display: flex;
 		flex-direction: column;
-		padding: 3rem 3rem 4rem 3rem;
+		padding: 3rem var(--horiz-padding-main) 4rem var(--horiz-padding-main);
 		gap: 2rem;
 		background-color: var(--color-background);
 	}

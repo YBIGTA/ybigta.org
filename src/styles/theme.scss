@@ -1,8 +1,5 @@
 @use './tokens/color.scss' as color;
 
-@mixin variables {
-}
-
 @mixin dark-theme {
 	--color-primary: #{color.$blue-500};
 

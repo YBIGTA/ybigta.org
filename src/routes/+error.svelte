@@ -32,7 +32,7 @@
 <style>
 	.container {
 		width: 100%;
-		height: calc(100vh - 5rem - 12rem);
+		height: var(--min-height-main);
 
 		display: flex;
 		flex-direction: column;

@@ -13,28 +13,21 @@
 </li>
 
 <style lang="scss">
-	@use '../../../styles/tokens/color.scss' as color;
+	@use '$styles/tokens/color.scss' as color;
 
-	@media (prefers-color-scheme: dark) {
-		li.main a:hover,
-		li.main a:focus {
-			background-color: color.$neutral-700;
-		}
-		li.sub a:hover,
-		li.sub a:focus {
-			background-color: color.$neutral-600;
-		}
-	}
-
-	@media (prefers-color-scheme: light) {
-		li.main a:hover,
-		li.main a:focus {
-			background-color: color.$neutral-200;
-		}
-
-		li.sub a:hover,
-		li.sub a:focus {
-			background-color: color.$neutral-200;
+	li.main:hover,
+	li.sub:hover,
+	li.main:focus,
+	li.sub:focus {
+		a {
+			@media (prefers-color-scheme: light) {
+				background-color: color.$neutral-200;
+				color: var(--color-primary);
+			}
+			@media (prefers-color-scheme: dark) {
+				background-color: color.$neutral-700;
+				color: var(--color-primary);
+			}
 		}
 	}
 

@@ -1,0 +1,109 @@
+@use './tokens/layout.scss' as layout;
+@use './tokens/typography.scss' as typography;
+
+@mixin variables {
+	--z-index-header: #{layout.$zindex-header};
+	--z-index-content: #{layout.$zindex-content};
+
+	--horiz-padding-main: clamp(1rem, 5vw, 3rem);
+
+	--height-header: #{layout.$height-header};
+
+	--min-height-main: calc(100vh - #{layout.$height-header});
+}
+
+// Heading1
+@mixin heading1 {
+	@media screen and (min-width: 768px) {
+		font-size: typography.$font-size-64;
+		line-height: typography.$line-height-64;
+		letter-spacing: typography.$letter-spacing-64;
+	}
+	font-size: typography.$font-size-48;
+	line-height: typography.$line-height-48;
+	letter-spacing: typography.$letter-spacing-48;
+}
+
+// Heading2
+@mixin heading2 {
+	@media screen and (min-width: 768px) {
+		font-size: typography.$font-size-48;
+		line-height: typography.$line-height-48;
+		letter-spacing: typography.$letter-spacing-48;
+	}
+	font-size: typography.$font-size-36;
+	line-height: typography.$line-height-36;
+	letter-spacing: typography.$letter-spacing-36;
+}
+
+// Heading3
+@mixin heading3 {
+	@media screen and (min-width: 768px) {
+		font-size: typography.$font-size-36;
+		line-height: typography.$line-height-36;
+		letter-spacing: typography.$letter-spacing-36;
+	}
+	font-size: typography.$font-size-28;
+	line-height: typography.$line-height-28;
+	letter-spacing: typography.$letter-spacing-28;
+}
+
+// Heading4
+@mixin heading4 {
+	@media screen and (min-width: 768px) {
+		font-size: typography.$font-size-28;
+		line-height: typography.$line-height-28;
+		letter-spacing: typography.$letter-spacing-28;
+	}
+	font-size: typography.$font-size-24;
+	line-height: typography.$line-height-24;
+	letter-spacing: typography.$letter-spacing-24;
+}
+
+// Heading5
+@mixin heading5 {
+	@media screen and (min-width: 768px) {
+		font-size: typography.$font-size-24;
+		line-height: typography.$line-height-24;
+		letter-spacing: typography.$letter-spacing-24;
+	}
+	font-size: typography.$font-size-20;
+	line-height: typography.$line-height-20;
+	letter-spacing: typography.$letter-spacing-20;
+}
+
+// Heading6
+@mixin heading6 {
+	@media screen and (min-width: 768px) {
+		font-size: typography.$font-size-20;
+		line-height: typography.$line-height-20;
+		letter-spacing: typography.$letter-spacing-20;
+	}
+	font-size: typography.$font-size-18;
+	line-height: typography.$line-height-18;
+	letter-spacing: typography.$letter-spacing-18;
+}
+
+// Body1
+@mixin body1 {
+	@media screen and (min-width: 768px) {
+		font-size: typography.$font-size-18;
+		line-height: typography.$line-height-18;
+		letter-spacing: typography.$letter-spacing-18;
+	}
+	font-size: typography.$font-size-16;
+	line-height: typography.$line-height-16;
+	letter-spacing: typography.$letter-spacing-16;
+}
+
+// Body2
+@mixin body2 {
+	@media screen and (min-width: 768px) {
+		font-size: typography.$font-size-16;
+		line-height: typography.$line-height-16;
+		letter-spacing: typography.$letter-spacing-16;
+	}
+	font-size: typography.$font-size-14;
+	line-height: typography.$line-height-14;
+	letter-spacing: typography.$letter-spacing-14;
+}
