@@ -12,7 +12,7 @@
 <div class="container">
 	<PageTitle>
 		<span slot="title">Recruiting</span>
-		<img src="/images/recruiting/cover.jpeg" alt="recruiting" slot="image" />
+		<img src="/images/recruiting/cover.png" alt="recruiting" slot="image" />
 	</PageTitle>
 	<PageSection>
 		<h3 slot="title">지원 자격</h3>
@@ -39,6 +39,7 @@
 		width: 100%;
 		aspect-ratio: 16 / 6;
 		object-fit: cover;
+		object-position: center 70%;
 	}
 
 	div.placeholder {

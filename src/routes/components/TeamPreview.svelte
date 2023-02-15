@@ -1,54 +1,64 @@
-<li>
-	<div class="img" />
-	<article>
-		<h6>
-			<slot name="team_name" />
-		</h6>
-		<p>
-			<slot name="team_desc" />
-		</p>
-	</article>
-</li>
+<script>
+	export let name = '';
+	export let desc = '';
+	export let imageSrc = '';
+</script>
+
+<article class="team">
+	<section class="text">
+		<h4>{name}</h4>
+		<p>{desc}</p>
+	</section>
+	<section class="image">
+		<img src={imageSrc} alt={name} loading="lazy" />
+	</section>
+</article>
 
 <style lang="scss">
 	@use '$styles/variables.scss' as *;
-	li {
-		display: flex;
-		flex-direction: column;
 
-		flex: 1 1 auto;
-		width: 20rem;
-		aspect-ratio: 1/1;
-
-		box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.1);
-	}
-
-	.img {
-		width: 100%;
-		height: 50%;
-		flex: 1 1 auto;
-		background-color: #000;
-	}
-
-	article {
-		height: 50%;
-		padding: 1rem;
-		display: flex;
-		flex-direction: column;
-		gap: 1rem;
-		background-color: white;
-
-		h6 {
-			font-weight: 500;
-			@include heading6;
+	.team {
+		position: relative;
+		background-color: var(--color-surface-background);
+		@media (prefers-color-scheme: light) {
+			box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
 		}
+		aspect-ratio: 9/4;
+		border-radius: 0.5rem;
+	}
+	section.text {
+		width: 50%;
+		height: 100%;
+		padding: 1rem;
 
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		gap: 0.5rem;
+
+		h4 {
+			@include heading5;
+			color: var(--color-title);
+			font-weight: 700;
+		}
 		p {
-			@include body1;
-			flex: 1 1 auto;
-			overflow: hidden;
-			color: var(--color-text);
+			@include body2;
+			color: var(--color-subtitle);
 			word-break: keep-all;
+		}
+	}
+	section.image {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+
+		img {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+			border-radius: 0.5rem;
 		}
 	}
 </style>
