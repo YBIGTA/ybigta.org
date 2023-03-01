@@ -3,8 +3,8 @@ export const ExternalLinks = {
 	DataAnalyticsWiki: 'https://ybigta.gitbook.io/data-analytics/',
 	DataScienceWiki: 'https://ybigta.gitbook.io/data-science/',
 	Archive: 'https://ybigta.gitbook.io/archive/',
-	Conference: 'https://ybigta.gitbook.io/archive/',
-	Study: 'https://ybigta.gitbook.io/archive/'
+	Conference: 'https://ybigta.gitbook.io/archive/conference',
+	Study: 'https://ybigta.gitbook.io/archive/study'
 };
 
 export const InternalLinks = {
